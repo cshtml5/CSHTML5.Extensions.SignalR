@@ -1,0 +1,16 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CSHTML5.Extensions.SignalR.Client/obj
+/.vs/CSHTML5.Extensions.SignalR/v14
+/CSHTML5.Extensions.SignalR.Client/bin
+/.vs/config
+/CSHTML5.Extensions.SignalR.Server.Example/bin
+/CSHTML5.Extensions.SignalR.Server.Example/obj
+/packages
+/CSHTML5.Extensions.SignalR.Client.SLMigration/bin
+/CSHTML5.Extensions.SignalR.Client.SLMigration/obj
+/CSHTML5.Extensions.SignalR.Client.Example/bin
+/CSHTML5.Extensions.SignalR.Client.Example/obj
+*.user
