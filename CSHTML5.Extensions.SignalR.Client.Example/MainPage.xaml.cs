@@ -12,6 +12,9 @@ namespace CSHTML5.Extensions.SignalR.Client.Example
             InitializeComponent();
 
             this.Loaded += UserControl_Loaded;
+
+            // Populate the "Your name" field with a randomly-generated name, for convenience:
+            txtName.Text = "User" + (new Random()).Next(1000, 9999);
         }
 
         HubConnection connection;
@@ -46,13 +49,7 @@ namespace CSHTML5.Extensions.SignalR.Client.Example
             else
             {
                 MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 6. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
-                btnSend.IsEnabled = false;
             }
-        }
-
-        void connection_StateChanged(StateChange obj)
-        {
-            btnSend.IsEnabled = (obj.NewState == ConnectionState.Connected);
         }
 
         private void btnSend_Click(object sender, RoutedEventArgs e)
@@ -62,9 +59,16 @@ namespace CSHTML5.Extensions.SignalR.Client.Example
 
         private void SendMessage()
         {
-            // Send the message: 
-            hub.Invoke("SendMessage", txtName.Text, txtMessage.Text);
-            txtMessage.Text = "";
+            if (!Interop.IsRunningInTheSimulator)
+            {
+                // Send the message: 
+                hub.Invoke("SendMessage", txtName.Text, txtMessage.Text);
+                txtMessage.Text = "";
+            }
+            else
+            {
+                MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 6. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
+            }
         }
     }
 }
