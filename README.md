@@ -13,7 +13,7 @@ To be able to compile this project using Visual Studio, you need to download and
 
 
 
-### GETTING STARTED:
+### GETTING STARTED - Running the sample client/server chat application:
 
 1. Make sure that you have the latest version of "C#/XAML for HTML5" installed. You can download it from: http://www.cshtml5.com
 
@@ -37,6 +37,18 @@ Please note that if you are using Microsoft Edge, you should launch the applicat
 
 
 
+### DESCRIPTION OF THE PROJECT STRUCTURE
+
+* **CSHTML5.Extensions.SignalR.Client**: This is the main class library, which you should reference if you want to create a CSHTML5 SignalR client application.
+
+* **CSHTML5.Extensions.SignalR.Client.SLMigration**: This is the same as above, but for CSHTML5 projects of type "Silverlight Migration Edition". You should reference this library if you want to create a CSHTML5 SignalR client application of type "Silverlight Migration Edition".
+
+* **CSHTML5.Extensions.SignalR.Client.Example**: This is the client-side portion of a sample chat application built with CSHTML5 and SignalR.
+
+* **CSHTML5.Extensions.SignalR.Server.Example**: This is the server-side portion of a sample chat application built with CSHTML5 and SignalR.
+
+
+
 ### RELATED TOPICS
 
-How to create a SignalR Server project? => https://github.com/cshtml5/CSHTML5.Extensions.SignalR/wiki/How-to-create-a-SignalR-server-project
+* [How to create a SignalR server-side project?](https://github.com/cshtml5/CSHTML5.Extensions.SignalR/wiki/How-to-create-a-SignalR-server-project)
