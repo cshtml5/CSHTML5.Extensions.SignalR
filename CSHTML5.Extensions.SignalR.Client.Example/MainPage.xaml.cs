@@ -48,7 +48,7 @@ namespace CSHTML5.Extensions.SignalR.Client.Example
             }
             else
             {
-                MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 6. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
+                MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 5. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
             }
         }
 
@@ -67,7 +67,7 @@ namespace CSHTML5.Extensions.SignalR.Client.Example
             }
             else
             {
-                MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 6. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
+                MessageBox.Show("The Simulator does not support running SignalR applications because the current version does not support Ecmascript 5. Please test this application in the browser instead. To do so, wait for the generation to complete, and then click 'Run in browser'.");
             }
         }
     }

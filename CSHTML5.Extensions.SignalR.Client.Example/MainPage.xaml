@@ -12,14 +12,20 @@
         </Border.Effect>
         <StackPanel>
             <TextBlock Text="Chat application example made with CSHTML5 and SignalR" Foreground="Black" TextWrapping="Wrap" FontSize="17" HorizontalAlignment="Left"/>
-            <StackPanel Orientation="Horizontal" Margin="0,20,0,0">
-                <TextBlock Text="Your name:" Margin="0,0,10,0" Width="70" VerticalAlignment="Top"/>
-                <TextBox x:Name="txtName" Grid.Column="1" Width="70" VerticalAlignment="Top"/>
-            </StackPanel>
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <TextBlock Text="Your message:" Margin="0,0,10,0" Width="70" VerticalAlignment="Top"/>
-                <TextBox x:Name="txtMessage" Width="150" Height="40" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Top" />
-            </StackPanel>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Your name:" Grid.Row="0" Grid.Column="0" Margin="0,20,0,0"/>
+                <TextBox x:Name="txtName" Grid.Row="0" Grid.Column="1" Margin="10,20,0,0" />
+                <TextBlock Text="Your message:" Grid.Row="1" Grid.Column="0" Margin="0,10,0,0" Width="70" VerticalAlignment="Top"/>
+                <TextBox x:Name="txtMessage" Grid.Row="1" Grid.Column="1" Height="40" Margin="10,10,0,0" AcceptsReturn="True" TextWrapping="Wrap" VerticalAlignment="Top" />
+            </Grid>
             <Button x:Name="btnSend" Margin="0,10,0,0" Click="btnSend_Click" Foreground="White" Background="#FFE44D26" HorizontalAlignment="Center">Send</Button>
             <TextBlock Text="Chat history:" Margin="0,10,0,0" Foreground="Gray" HorizontalAlignment="Left"/>
             <ListBox x:Name="ListBoxWithMessages" Background="#FFFEFFF3">
@@ -28,7 +34,7 @@
                         <TextBlock VerticalAlignment="Center" Margin="3,0">
                             <Bold>
                                 <Run Text="{Binding Item1}" />
-                                <Run Text=":" />
+                                <Run Text=": " />
                             </Bold>
                             <Run Text="{Binding Item2}" />
                         </TextBlock>
