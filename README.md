@@ -13,7 +13,11 @@ To be able to compile this project using Visual Studio, you need to download and
 
 
 
-### GETTING STARTED - Running the sample client/server chat application:
+### GETTING STARTED - Running the sample client/server chat application
+
+![Screenshot of sample chat application](https://github.com/cshtml5/CSHTML5.Extensions.SignalR/blob/master/images/screenshot-chat-app-made-with-signalr-and-cshtml5.png)
+
+To run the sample client/server chat application, please follow these instructions:
 
 1. Make sure that you have the latest version of "C#/XAML for HTML5" installed. You can download it from: http://www.cshtml5.com
 
