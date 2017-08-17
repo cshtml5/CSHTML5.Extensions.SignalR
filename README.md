@@ -56,3 +56,4 @@ Please note that if you are using Microsoft Edge, you should launch the applicat
 ### RELATED TOPICS
 
 * [How to create a SignalR server-side project?](https://github.com/cshtml5/CSHTML5.Extensions.SignalR/wiki/How-to-create-a-SignalR-server-project)
+* [How to update the SignalR JavaScript library to the latest version](https://github.com/cshtml5/CSHTML5.Extensions.SignalR/wiki/How-to-update-the-SignalR-JavaScript-library-to-the-latest-version)
